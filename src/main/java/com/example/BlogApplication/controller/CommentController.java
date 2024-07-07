@@ -45,7 +45,7 @@ public class CommentController {
 	@GetMapping("comments/{postid}")
 	public ResponseEntity getCommentsByPostId(@PathVariable Long postid) {
 		try {
-			System.out.println("comments");
+			
 			return ResponseEntity.ok(service.getCommentByPostId(postid));
 		}
 		
